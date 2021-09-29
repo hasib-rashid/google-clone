@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "yarn watch:css && next dev",
+    "build": "yarn watch:css && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
   },
   "dependencies": {
     "next": "11.1.2",
