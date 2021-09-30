@@ -1,12 +1,13 @@
 export default function SearchResults({ results }: any) {
+    console.log(results.results)
     return (
         <div className="mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52">
             <p className="text-gray-600 text-md mb-5 mt-3">
-                About {results.searchInformation?.formattedTotalResults} results (
-                {results.searchInformation?.formattedSearchTime} seconds)
+                About {formatNumber(results.total)} results (
+                {((results.ts) as number).toFixed(2)} seconds)
             </p>
 
-            {results.items?.map((result: any) => (
+            {results.results.items?.map((result: any) => (
                 <div key={result.link} className="max-w-xl mb-8">
                     <div className="group">
                         <a href={result.link} className="text-sml line-clamp-1">
@@ -23,4 +24,11 @@ export default function SearchResults({ results }: any) {
             ))}
         </div>
     );
+}
+
+function formatNumber(number: string, minimumFractionDigits = 0) {
+    return Number.parseFloat(number).toLocaleString(undefined, {
+        minimumFractionDigits,
+        maximumFractionDigits: 2,
+    });
 }

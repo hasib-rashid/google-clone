@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Header from "../components/Header";
 import Response from "../Response";
 import SearchResults from "../components/SearchResults";
+import axios from "axios";
 
 export default function Search({ results }: any) {
     const router = useRouter();
@@ -24,11 +25,17 @@ export async function getServerSideProps(context: any) {
     const useDummyData = false;
     const startIndex = context.query.start || "0";
 
-    const data = useDummyData
-        ? Response
-        : await fetch(
-            `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
-        ).then((response) => response.json());
+    const data = await axios.request({
+        method: "GET", url: "https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk&num=100", headers: {
+            'x-user-agent': 'desktop',
+            'x-rapidapi-host': 'google-search3.p.rapidapi.com',
+            'x-rapidapi-key': '616e3d86cbmsh19e94e8d6df2d94p13e47ejsne5e9296c68cb'
+        }
+    }).then(function (response) {
+        return response.data
+    }).catch(function (error) {
+        console.error(error);
+    });
 
     return {
         props: {
