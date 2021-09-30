@@ -1,7 +1,9 @@
+import SearchHeader from "./SearchHeader";
+
 export default function SearchResults({ results }: any) {
     return (
         <div className="mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:ml-32">
-            <p className="text-gray-600 text-md mb-5 mt-3">
+            <p className="text-gray-600 text-sm mb-5 mt-3">
                 About {formatNumber(results.total)} results (
                 {((results.ts) as number).toFixed(2)} seconds)
             </p>

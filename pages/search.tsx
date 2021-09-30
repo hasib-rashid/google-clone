@@ -4,17 +4,18 @@ import Header from "../components/Header";
 import Response from "../Response";
 import SearchResults from "../components/SearchResults";
 import axios from "axios";
+import SearchHeader from "../components/SearchHeader";
 
 export default function Search({ results }: any) {
     const router = useRouter();
 
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <Head>
                 <title>{router.query.term} - Google Search</title>
             </Head>
 
-            <Header />
+            <SearchHeader />
 
             <SearchResults results={results} />
         </div>

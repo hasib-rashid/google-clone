@@ -13,7 +13,6 @@ const Home: NextPage = () => {
 	const searchInputRef = useRef(null);
 
 	const handleKeyDown = (e: Event) => {
-		console.log(e.defaultPrevented)
 		// @ts-ignore
 		if (e.key === 'Enter') {
 			// @ts-ignore
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
 			if (!term) return;
 
 
-			router.push(`/search?term=${term}`);
+			window.location.replace(`/search?term=${term}`);
 		}
 	}
 
