@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MicrophoneIcon, SearchCircleIcon, SearchIcon, ViewGridIcon } from '@heroicons/react/solid'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
 	return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
 					<button className="mx-3 px-4 py-2 bg-gray-100 text-sm rounded-md">Google Search</button>
 					<button className="mx-3 px-4 py-2 bg-gray-100 text-sm rounded-md">I'm Feeling Lucky</button>
 				</section>
+				<Footer />
 			</div>
 		</main>
 	)
