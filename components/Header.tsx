@@ -4,15 +4,15 @@ import Avatar from './Avatar'
 
 const Header = () => {
     return (
-        <header className="flex justify-between">
+        <header className="flex justify-between h-7">
             {/* Header Left */}
-            <div className="">
-                <h1>Google Clone</h1>
+            <div className="select-none">
+                <h1 className="text-white">Google Clone</h1>
             </div>
 
             {/* Header Right */}
             <div>
-                <ul className="flex">
+                <ul className="flex justify-center items-center h-14">
                     <li className="mx-4">Gmail</li>
                     <li className="mx-4">Image</li>
                     <li className="mx-4"><ViewGridIcon className="w-7 rounded-full hover:bg-gray-100 cursor-pointer" /></li>
