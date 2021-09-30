@@ -22,11 +22,8 @@ export default function Search({ results }: any) {
 }
 
 export async function getServerSideProps(context: any) {
-    const useDummyData = false;
-    const startIndex = context.query.start || "0";
-
     const data = await axios.request({
-        method: "GET", url: "https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk&num=100", headers: {
+        method: "GET", url: `https://google-search3.p.rapidapi.com/api/v1/search/q=${context.query.term}&num=1000`, headers: {
             'x-user-agent': 'desktop',
             'x-rapidapi-host': 'google-search3.p.rapidapi.com',
             'x-rapidapi-key': '616e3d86cbmsh19e94e8d6df2d94p13e47ejsne5e9296c68cb'
