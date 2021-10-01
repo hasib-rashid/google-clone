@@ -4,11 +4,11 @@
 </p>
 
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/866621134019362846/892104133656584222/pngaaa.com-2507930.png" style="width: 60px;" alt="React Logo">
-  <img src="https://iconape.com/wp-content/png_logo_vector/typescript.png" style="width: 60px" alt="Typescript">
-  <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" style="width: 65px;" alt="CSS">
-  <img src="https://bradlc.gallerycdn.vsassets.io/extensions/bradlc/vscode-tailwindcss/0.2.0/1558040563649/Microsoft.VisualStudio.Services.Icons.Default" style="width: 65px;" alt="Tailwind">
-  <img src="https://iconape.com/wp-content/files/wa/116965/png/yarn.png" style="width: 60px;" alt="Yarn Logo">
+  <img src="https://media.discordapp.net/attachments/866621134019362846/892104133656584222/pngaaa.com-2507930.png" style="width: 40px;" alt="React Logo">
+  <img src="https://iconape.com/wp-content/png_logo_vector/typescript.png" style="width: 40px" alt="Typescript">
+  <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" style="width: 45px;" alt="CSS">
+  <img src="https://bradlc.gallerycdn.vsassets.io/extensions/bradlc/vscode-tailwindcss/0.2.0/1558040563649/Microsoft.VisualStudio.Services.Icons.Default" style="width: 45px;" alt="Tailwind">
+  <img src="https://iconape.com/wp-content/files/wa/116965/png/yarn.png" style="width: 40px;" alt="Yarn Logo">
 </div>
 
 ### Website Link: https://hasib-rashid.github.io/microsoft-clone/
