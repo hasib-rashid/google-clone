@@ -22,6 +22,8 @@ I didnt use the Google's official Search API cuz Im broke and have no money
 Instead i used a API from Rapid Api which is unlimited searches for free (I know its dumb but whatever)
 
 Time took for this project: 4 - 5 hours
+
+### Also do note that all of this is my code, I didnt copy it from any other sources. Feel free to copy my project
 ### Feel Free to contribute and open pull requests, I will appreciate it 😀
 
 ### Made with ❤ by Hasib Al Rashid
