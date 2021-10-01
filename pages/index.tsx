@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
 		if (!term) return;
 
-		router.push(`/search?term=${term}`);
+		window.location.replace(`/search?term=${term}`);
 	};
 
 	return (
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 				</div>
 				<section className="flex mt-6">
 					<button onClick={search} className="mx-3 px-4 py-2 bg-gray-100 text-sm rounded-md">Google Search</button>
-					<button onClick={search} className="mx-3 px-4 py-2 bg-gray-100 text-sm rounded-md">I'm Feeling Lucky</button>
+					<button onClick={search} className="mx-3 px-4 py-2 bg-gray-100 text-sm rounded-md">Im Feeling Lucky</button>
 				</section>
 				<Footer />
 			</div>

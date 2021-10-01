@@ -21,7 +21,7 @@ const SearchHeader = () => {
             <article className="pl-32 search_header_main my-8">
                 <header className="flex justify-between">
                     <div className="flex justify-center items-center">
-                        <Image onClick={() => router.push("/")} className="cursor-pointer" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" width={96} height={30} />
+                        <Image onClick={() => router.push("/")} className="cursor-pointer" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" width={96} height={30} />
                         <div className="flex border-2 justify-between border-gray-100 rounded-3xl px-4 py-1 text-sm search_header_button mx-14">
                             <SearchIcon className="w-6 text-gray-400" />
                             {/* @ts-ignore */}
