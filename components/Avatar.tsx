@@ -9,11 +9,10 @@ export default function Avatar({ url, className }: Avatar) {
         <Image
             loading="lazy"
             src={url}
-            className={`h-8 w-8  rounded-full cursor-pointer 
-        transition duration-150 transform hover:scale-110 ${className}`}
+            className={`h-8 w-8  rounded-full cursor-pointer ${className}`}
             alt="Profile pic"
-            width={8}
-            height={8}
+            width={36}
+            height={36}
         />
     );
 }

@@ -11,6 +11,7 @@ export default function Search({ results }: any) {
         <div className="overflow-x-hidden">
             <Head>
                 <title>{router.query.term} - Google Search</title>
+                <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/archive/5/53/20190923152039%21Google_%22G%22_Logo.svg" />
             </Head>
 
             <SearchHeader />

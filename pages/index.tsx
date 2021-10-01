@@ -36,6 +36,23 @@ const Home: NextPage = () => {
 
 	return (
 		<main>
+			<Head>
+				<meta httpEquiv="x-ua-compatible" content="ie=edge" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>Google</title>
+				<meta name="twitter:image" content="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
+				<meta property="og:image" content="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
+				<meta name="twitter:url" content="https://google.com" />
+				<meta property="og:url" content="https://google.com/" />
+				<meta name="twitter:title" content="Google" />
+				<meta property="og:title" content="Google" />
+				<meta name="twitter:description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking ..." />
+				<meta property="og:description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking ..." />
+				<meta name="twitter:card" content="summary" />
+				<meta property="og:type" content="website" />
+				<meta name="description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking ..." />
+				<link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/archive/5/53/20190923152039%21Google_%22G%22_Logo.svg" />
+			</Head>
 			<Header />
 			<div className="flex flex-col justify-center items-center mt-10">
 				<Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" width={272} height={92} />
